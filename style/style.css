@@ -44,6 +44,7 @@
     align-items: center;
 }
 .banner-container{
+    flex-direction: column;
     max-width: 582px;
 }
 
@@ -80,11 +81,17 @@
     .banner{
         flex-direction: column-reverse;
     }
+    .banner-container{
+        align-items: center;
+        text-align: center;
+    }
+    .banner-container>h1{
+        font-size: 1.8rem;
+    }
     .banner-image{
         width: 260px;
         height: 260px;
         padding: 15px;
-
     }
     
 }
