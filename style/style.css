@@ -72,10 +72,19 @@
     background-repeat:no-repeat;
 }
 
+.banner-image>img{
+    width: 100%;
+}
 
 @media screen and (max-width:570px) {
     .banner{
         flex-direction: column-reverse;
+    }
+    .banner-image{
+        width: 260px;
+        height: 260px;
+        padding: 15px;
+
     }
     
 }
