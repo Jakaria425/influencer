@@ -1,0 +1,59 @@
+.header, .nave, .main, .side, .advertise, .footer{
+    border: 2px solid red;
+    border-radius: 10px;
+
+    background-color: aqua;
+}
+.header{
+    grid-area: header;
+}
+.nave{
+    grid-area: nave;
+}
+.main{
+    grid-area: main;
+}
+.side{
+    grid-area: side;
+}
+.advertise{
+    grid-area: advertise;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header   header   header"
+    "nave      main     side"
+    "nave      main     advertise"
+    "footer   footer   footer"
+    ;
+}
+
+@media screen  and (max-width: 500px) {
+    .container{
+        grid-template-areas:
+        "header"
+        "nave"
+        "main"
+        "side"
+        "advertise"
+        "footer";
+    }
+    
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .container{
+        grid-template-areas:
+        "header header"
+        "nave  nave"
+        "side main"
+        "side main"
+        "advertise footer";
+    }
+    
+}

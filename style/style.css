@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+  }
+/* shared style */
+.display-flex{
+    display: flex;
+
+}
+
+
+.header{
+    color: rgb(58, 58, 58);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-container{
+    max-width: 500px;
+    max-height: 36px;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-img{
+    max-height: 20px;
+}
+.nav-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-item>a{
+    color: black;
+    text-decoration: none;
+}
+.banner{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-container{
+    max-width: 582px;
+}
+
+.banner-container>h1{
+    font-size: 3.1rem;
+    font-weight: 700;
+    }
+.banner-container>p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-container>button{
+    max-width: 200px;
+    padding: 10px 24px;
+    flex-grow: 0;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.banner-image{
+    padding: 20px;
+    background-image: url("../asets/images/Circle\ design.svg");
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+@media screen and (max-width:570px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    
+}
